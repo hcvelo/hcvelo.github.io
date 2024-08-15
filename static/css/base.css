@@ -1,0 +1,148 @@
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	background-color: #1d1d1b;
+	color: white;
+}
+
+.container {
+	min-width: 300px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #1d1d1b;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: end;
+}
+
+#socials {
+	display: flex;
+	justify-content: center;
+}
+
+header li {
+	display: inline-block;
+	margin: 0 5px 10px 0;
+}
+
+
+.fa-icon {
+	width: 1.6em;
+	height: 1.6em;
+	fill: white;
+}
+
+@media screen and (max-width: 600px) {
+	header {
+		grid-template-columns: 0fr 1fr 1fr;
+		justifty-content: start;
+	}
+
+	.fa-icon {
+		width: 1.2em;
+		height: 1.2em;
+	}
+}
+
+nav {
+	border-top: 4px solid #3699f5;
+	padding: 6px;
+	color: white;
+	background-color: #1d1d1b;
+	border-bottom: 4px solid #f50505;
+	text-align: center;
+	font-size: 1.4em;
+	display: flex;
+	justify-content: space-evenly;
+}
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+#headerlogo {
+	text-align: center;
+}
+#headerlogo img {
+	max-height: 100px;
+}
+#homeContent {
+	margin-top: 40px;
+	padding: 20px;
+}
+#homeContent h2 {
+	margin-top: 40px;
+	font-size: 4em;
+	margin-bottom: 40px;
+	text-align: center;
+}
+#homeContent p {
+	font-size: 1.5em;
+	text-align: left;
+	line-height: 1.5;
+}
+#homeContent p a {
+	text-decoration: underline;
+	color: white;
+}
+#homeContent img {
+	margin-top: 20px;
+	border: 2px solid white;
+}
+
+@media screen and (max-width: 600px) {
+	#homeContent img {
+		display: none;
+	}
+}
+
+.sectionList {
+	margin-top: 40px;
+	font-size: 1.5em;
+}
+.sectionList h2 {
+	text-align: center;
+}
+.sectionList ul {
+	margin-top: 20px;
+	list-style-type: none;
+	text-align: center;
+	line-height: 1.8;
+}
+.sectionList a {
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
+}
+.contentPage {
+	margin-top: 20px;
+	margin-left: 20px;
+	line-spacing: 2;
+}
+.contentPage h2 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}

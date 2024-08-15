@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="sectionList montserrat">
+	<ul>
+		{{ $pages := where site.RegularPages "Section" "links" }}
+		{{ $paginator := .Paginate $pages }}
+
+		{{ range $paginator.Pages }}
+			<li>
+				<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+			</li>
+		{{ end }}
+	</ul>
+</div>
+{{ end }}
+
