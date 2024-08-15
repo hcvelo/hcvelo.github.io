@@ -19,6 +19,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	font-size: 65%;
+}
+
 body {
 	margin: 0px;
 	background-color: #1d1d1b;
@@ -74,7 +78,7 @@ nav {
 	background-color: #1d1d1b;
 	border-bottom: 4px solid #f50505;
 	text-align: center;
-	font-size: 1.4em;
+	font-size: 2.2rem;
 	display: flex;
 	justify-content: space-evenly;
 }
@@ -95,12 +99,12 @@ nav a {
 }
 #homeContent h2 {
 	margin-top: 40px;
-	font-size: 4em;
+	font-size: 6.0rem;
 	margin-bottom: 40px;
 	text-align: center;
 }
 #homeContent p {
-	font-size: 1.5em;
+	font-size: 2.2rem;
 	text-align: left;
 	line-height: 1.5;
 }
@@ -121,7 +125,7 @@ nav a {
 
 .sectionList {
 	margin-top: 40px;
-	font-size: 1.5em;
+	font-size: 2.4rem;
 }
 .sectionList h2 {
 	text-align: center;
