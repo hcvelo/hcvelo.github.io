@@ -1,15 +1,14 @@
 {{ define "main" }}
-<div class="montserrat sectionList">
-	<ul>
+<div class="montserrat">
+	<div style="margin-top: 5rem; display: grid; grid: auto-flow / 1fr 1fr; font-size: 2.4rem; gap: 2rem;">
 		{{ $pages := where site.RegularPages "Section" "schedule" }}
 		{{ $paginator := .Paginate $pages }}
 
 		{{ range $paginator.Pages }}
-			<li>
-			<a href="{{ .RelPermalink }}">{{ .LinkTitle }} ({{ .Params.When }})</a>
-			</li>
+		<a style="color: white; justify-self: end" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+		<p style="justify-self: start">{{ .Params.When }}</p>
 		{{ end }}
-	</ul>
+	</div>
 </div>
 {{ end }}
 

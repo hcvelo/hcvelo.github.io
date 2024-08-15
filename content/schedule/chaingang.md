@@ -1,7 +1,7 @@
 ---
 title: Chaingang
 params:
-    when: Thursdays, 18:30
+    when: Thursdays, 18:30pm
 ---
 
 ## Chaingang
