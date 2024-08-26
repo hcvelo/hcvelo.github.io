@@ -12,6 +12,11 @@
   font-style: normal;
 }
 
+:root {
+	--velo-black: #1d1d1b;
+	--velo-blue: #3699f5;
+	--velo-red: #f50505;
+}
 
 *{
 	padding: 0px;
@@ -25,7 +30,7 @@ html {
 
 body {
 	margin: 0px;
-	background-color: #1d1d1b;
+	background-color: var(--velo-black);
 	color: white;
 }
 
@@ -36,7 +41,7 @@ body {
 }
 
 header {
-	background-color: #1d1d1b;
+	background-color: var(--velo-black);
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	align-items: end;
@@ -72,11 +77,11 @@ header li {
 }
 
 nav {
-	border-top: 4px solid #3699f5;
+	border-top: 4px solid var(--velo-blue);
 	padding: 6px;
 	color: white;
-	background-color: #1d1d1b;
-	border-bottom: 4px solid #f50505;
+	background-color: var(--velo-black);
+	border-bottom: 4px solid var(--velo-red);
 	text-align: center;
 	font-size: 2.2rem;
 	display: flex;
@@ -93,33 +98,32 @@ nav a {
 #headerlogo img {
 	max-height: 100px;
 }
-#homeContent {
-	margin-top: 40px;
-	padding: 20px;
-}
-#homeContent h2 {
-	margin-top: 40px;
-	font-size: 6.0rem;
-	margin-bottom: 40px;
-	text-align: center;
-}
-#homeContent p {
-	font-size: 2.2rem;
-	text-align: left;
-	line-height: 1.5;
-}
-#homeContent p a {
-	text-decoration: underline;
-	color: white;
-}
-#homeContent img {
-	margin-top: 20px;
-	border: 2px solid white;
-}
 
 @media screen and (max-width: 600px) {
 	#homeContent img {
 		display: none;
+	}
+}
+
+#homeContainer {
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+}
+
+.homeContainerPanel {
+	font-size: 6rem;
+	padding: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+	#homeContainer {
+		grid-template-columns: 1fr;
 	}
 }
 
