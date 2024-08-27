@@ -1,23 +1,18 @@
 {{ define "main" }}
-  <div id="homeContainer" class="montserrat-bold">
+  <div id="homeContainer">
     <div class="homeContainerPanel">
-      <img style="border: 2px solid white; max-width: 400px;" src="/images/hc-velo-1.jpg" alt="4 cyclists in hc-velo jerseys riding down a country lane">
+      <img src="/images/hc-velo-1.jpg" alt="4 cyclists in hc-velo jerseys riding down a country lane">
     </div>
     <div class="homeContainerPanel">
-      <p>A cycling club for everyone.</h2>
+      <h1>A cycling club for everyone.</h1>
+      <div>
+        <p>Holmes Chapel Velo is a cycling club based in Cheshire. We run regular weekly club rides for both serious and social riders.</p>
+        <p>Please take a look at our current ride <a href="/schedule">schedule</a></p>
+        <p>Checkout our <a href="/links/instagram">Instagram</a> account</p>
+        <p>Or get in touch on <a href="/links/facebook">Facebook</a></p>
+    </div>
+    </div>
+    <div class="homeContainerPanel">
     </div>
   </div>
-  <!--
-    <div class="homeContainerPanel">
-      <p>We run regular weekly club rides for both serious and social riders.</p>
-    </div>
-    <div class="homeContainerPanel">
-      <p>Please take a look at our current ride <a href="/schedule">schedule</a>, checkout our <a href="/links/instagram">Instagram</a> account or get
-      in touch on <a href="/links/facebook">Facebook</a>.</p>
-    </div>
-  {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-  {{ end }}
-  -->
 {{ end }}
