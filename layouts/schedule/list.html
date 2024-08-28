@@ -1,12 +1,12 @@
 {{ define "main" }}
 <div class="montserrat">
-	<div style="margin-top: 5rem; display: grid; grid: auto-flow / 1fr 1fr; font-size: 2.4rem; gap: 2rem;">
+	<div id="scheduleContainer">
 		{{ $pages := where site.RegularPages "Section" "schedule" }}
 		{{ $paginator := .Paginate $pages }}
 
 		{{ range $paginator.Pages }}
-		<a style="color: white; justify-self: end" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-		<p style="justify-self: start">{{ .Params.When }}</p>
+		<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+		<p>{{ .Params.Day }}, {{ .Params.Time }}</p>
 		{{ end }}
 	</div>
 </div>
