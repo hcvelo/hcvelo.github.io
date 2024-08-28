@@ -6,15 +6,20 @@
     <title>{{ .Title }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    {{ with resources.Get "css/base.css" | minify }}
-    <style>{{ .Content | safeCSS }}</style> 
-    {{ end }}
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <!--
 	chain link by richard pasqua from https://thenounproject.com/browse/icons/term/chain-link
 	converted to favicon with https://realfavicongenerator.net
     -->
+
+    {{ if .Description }}
+    <meta name="description" content="{{ .Description }}">
+    {{ end }}
+
+    {{ with resources.Get "css/base.css" | minify }}
+    <style>{{ .Content | safeCSS }}</style>
+    {{ end }}
 </head>
 <body>
     <div class="container">
