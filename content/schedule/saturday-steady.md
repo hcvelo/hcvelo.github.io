@@ -1,7 +1,8 @@
 ---
 title: Saturday Steady
 params:
-    when: Saturdays, 08:00am
+    day: Saturday
+    time: 8am
 ---
 
 ## Saturday Steady

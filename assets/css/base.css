@@ -5,7 +5,7 @@
   font-style: normal;
 }
 
-.montserrat, .homeContainerPanel p {
+.montserrat, .homeContainerPanel p, #scheduleContainer a {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -57,8 +57,8 @@ header {
 }
 
 .fa-icon {
-	width: 2.5rem;
-	height: 2.5rem;
+	width: 2.4rem;
+	height: 2.4rem;
 	fill: white;
 }
 
@@ -75,7 +75,7 @@ nav {
 	background-color: var(--velo-black);
 	border-bottom: 4px solid var(--velo-red);
 	text-align: center;
-	font-size: 2.2rem;
+	font-size: 2.4rem;
 	display: flex;
 	justify-content: space-evenly;
 }
@@ -122,7 +122,7 @@ nav a {
 	margin-bottom: 20px;
 }
 .homeContainerPanel p {
-	font-size: 2rem;
+	font-size: 2.4rem;
 	margin-bottom: 20px;
 }
 
@@ -136,28 +136,46 @@ nav a {
 	}
 }
 
+#scheduleContainer {
+	padding: 10px;
+	max-width: 600px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 2.4rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+#scheduleContainer a {
+	color: white;
+}
+
 .sectionList {
-	margin-top: 40px;
+	margin-top: 20px;
+	padding: 10px;
 	font-size: 2.4rem;
 }
 .sectionList h2 {
 	text-align: center;
 }
 .sectionList ul {
-	margin-top: 20px;
 	list-style-type: none;
 	text-align: center;
 	line-height: 1.8;
 }
 .sectionList a {
-	text-decoration: none;
 	cursor: pointer;
 	color: white;
 }
 .contentPage {
 	margin-top: 20px;
-	margin-left: 20px;
+	padding: 10px;
 	line-spacing: 2;
+	font-size: 2.4rem;
 }
 .contentPage h2 {
 	margin-top: 20px;

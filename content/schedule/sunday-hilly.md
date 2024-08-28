@@ -1,7 +1,8 @@
 ---
 title: Sunday Hilly
 params:
-    when: Sundays, 08:00am
+    day: Sunday
+    time: 8am
 ---
 
 ## Sunday Hilly Ride

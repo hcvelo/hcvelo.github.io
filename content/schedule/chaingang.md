@@ -1,7 +1,8 @@
 ---
 title: Chaingang
 params:
-    when: Thursdays, 18:30pm
+    day: Thursday
+    time: 6:30pm
 ---
 
 ## Chaingang
@@ -10,7 +11,7 @@ A fast ride with a rotating paceline. Usually followed by a pint in the 3 Greyho
 
 ## When
 
-Every Thuesday, 18:30
+Every Thursday, 18:30
 
 ## Start Location
 
