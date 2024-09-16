@@ -1,8 +1,11 @@
 {{ define "main" }}
 <div class="montserrat">
+	<div id="ridesListContainer">
           {{ .Content }}
           {{ range .Pages }}
+                <p>{{ .Params.Date }} : {{ .Params.Time }}</p>
 		<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
           {{ end }}
+	</div>
 </div>
 {{ end }}
