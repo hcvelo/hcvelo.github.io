@@ -2,8 +2,8 @@
 <div class="montserrat">
 	<div id="ridesListContainer">
           {{ .Content }}
-          {{ range .Pages }}
-                <p>{{ .Params.Date }} : {{ .Params.Time }}</p>
+          {{ range .Pages.ByWeight }}
+                <p>{{ .Params.event_date }} {{ .Params.event_time }}</p>
 		<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
           {{ end }}
 	</div>
