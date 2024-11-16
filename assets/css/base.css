@@ -79,7 +79,7 @@ nav {
 	display: flex;
 	justify-content: space-evenly;
 }
-nav a {
+a {
 	text-decoration: none;
 	color: white;
 }
@@ -189,4 +189,10 @@ nav a {
 	font-size: 3rem;
 	margin-top: 20px;
 	margin-bottom: 10px;
+}
+
+.galleria {
+	margin-top: 10px;
+	background: #1d1d1b;
+	height: 600px;
 }
