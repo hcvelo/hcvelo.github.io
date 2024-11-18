@@ -67,9 +67,24 @@
 		document.getElementById("menuButton").addEventListener("click", function() {
 		    let menuItems = document.getElementsByClassName("menuOption");
 		    for (let i = 0; i < menuItems.length; i++) {
-			menuItems[i].style.display = menuItems[i].style.display === "none" ? "inline" : "none";
+			menuItems[i].style.display = menuItems[i].offsetParent === null ? "inline" : "none";
 		    }
 		});
+
+		window.addEventListener("resize", function() {
+		    if (window.innerWidth > 600) {
+			setMenuOptionsDisplay("inline");
+		    } else {
+			setMenuOptionsDisplay("none");
+		    }
+		});
+
+		function setMenuOptionsDisplay(disp) {
+			let menuItems = document.getElementsByClassName("menuOption");
+			for (let i = 0; i < menuItems.length; i++) {
+			    menuItems[i].style.display = disp;
+			}
+		}
     </script>
 </body>
 </html>
