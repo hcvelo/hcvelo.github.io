@@ -1,8 +1,12 @@
 {{ define "main" }}
-<div class="montserrat">
+<div class="sectionList montserrat">
+    <ul>
           {{ .Content }}
           {{ range .Pages }}
-		<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            <li>
+                <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            </li>
           {{ end }}
+    </ul>
 </div>
 {{ end }}

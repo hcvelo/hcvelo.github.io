@@ -49,11 +49,12 @@
 	    </header>
 	    {{ with site.Menus.main }}
 	    <nav class="montserrat">
+		<a href="#" id="menuButton">Menu</a>
 	    {{ range . }}
 	    {{ if $.IsMenuCurrent .Menu . }}
-		<a class="active" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+		<a class="menuOption active" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
 	    {{ else }}
-		<a href="{{ .URL }}">{{ .Name }}</a>
+		<a class="menuOption" href="{{ .URL }}">{{ .Name }}</a>
 	    {{ end }}
 	    {{ end }}
 	    </nav>
@@ -62,6 +63,14 @@
     <div id="pageContainer" class="container">
 	{{- block "main" . }}{{- end }}
     </div>
+    <script>
+		document.getElementById("menuButton").addEventListener("click", function() {
+		    let menuItems = document.getElementsByClassName("menuOption");
+		    for (let i = 0; i < menuItems.length; i++) {
+			menuItems[i].style.display = menuItems[i].style.display === "none" ? "inline" : "none";
+		    }
+		});
+    </script>
 </body>
 </html>
 
