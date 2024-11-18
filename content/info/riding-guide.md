@@ -83,7 +83,8 @@ It is important that the following information is considered before any club rid
 
 ## During the ride
 
-As a general introduction to group riding please watch and familiarise yourself with the information contained within the following video: [GCN: Riding in a group](https://www.youtube.com/watch?v=93dprSqdL5s)
+As a general introduction to group riding please watch and familiarise yourself with the information contained within the following video.
+{{< youtube 93dprSqdL5s >}}
 
 In general terms please follow the following key points throughout any ride:
 
@@ -109,7 +110,8 @@ In general terms please follow the following key points throughout any ride:
 
 ## Hand signals
 
-Know the meaning of and how to use standard cycling hand signals. Please watch the following GCN video for great information on the use of hand signals. [GCN: Hand Signals](https://www.youtube.com/watch?v=prYMM7D2qF8)
+Know the meaning of and how to use standard cycling hand signals. Please watch the following GCN video for great information on the use of hand signals.
+{{< youtube prYMM7D2qF8 >}}
 
 Generally, the following signals will be used during a ride:
 

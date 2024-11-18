@@ -232,9 +232,17 @@ nav a {
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
+.contentPage table thead {
+	border-bottom: 2px solid var(--velo-red);
+}
+.contentPage table tr:nth-child(even) {
+	border-bottom: 2px solid var(--velo-red);
+	border-top: 2px solid var(--velo-blue);
+}
+.contentPage table {
+	border-bottom: 2px solid var(--velo-blue);
+}
 .contentPage table thead tr {
-    background-color: var(--velo-blue);
-    color: #ffffff;
     text-align: left;
 }
 .contentPage table th,
