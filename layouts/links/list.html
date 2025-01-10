@@ -6,7 +6,7 @@
 
 		{{ range $paginator.Pages }}
 			<li>
-				<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+				<a href="{{ .Params.redirect_url }}" target="_blank">{{ .LinkTitle }}</a>
 			</li>
 		{{ end }}
 	</ul>
