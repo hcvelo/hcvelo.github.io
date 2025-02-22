@@ -4,7 +4,7 @@
           {{ .Content }}
           {{ range .Pages.ByWeight }}
                 <p>{{ .Params.event_date }} {{ .Params.event_time }}</p>
-		<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+		<a href="{{ .RelPermalink }}">{{ .LinkTitle | safeHTML }}</a>
           {{ end }}
 	</div>
 </div>
