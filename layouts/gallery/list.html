@@ -1,19 +1,8 @@
 {{ define "main" }}
     <div class="montserrat contentPage">
         <div class="galleria">
+            <a href="https://www.flickr.com/photos/201809229@N03/albums/72177720321989599" target="_blank">View on Flickr</a>
         </div>
-        <a href="https://www.flickr.com/photos/201809229@N03/albums/72177720321989599" target="_blank">View on Flickr</a>
     </div>
-    <script>
-        (function() {
-            Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
-            Galleria.run('.galleria', {
-                            flickr: 'set:72177720321989599',
-                            flickrOptions: {
-                            sort: 'date-posted-asc'
-                    }
-            });
-        }());
-    </script>
 {{ end }}
 

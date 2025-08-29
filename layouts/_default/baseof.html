@@ -13,12 +13,6 @@
     <meta name="description" content="{{ .Description }}">
     {{ end }}
 
-    {{ if eq .Page.Section "gallery" }}
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/plugins/flickr/galleria.flickr.min.js"></script>
-    {{ end }}
-
     {{ with resources.Get "css/base.css" | minify }}
     <style>{{ .Content | safeCSS }}</style>
     {{ end }}
