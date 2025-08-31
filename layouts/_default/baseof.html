@@ -13,6 +13,10 @@
     <meta name="description" content="{{ .Description }}">
     {{ end }}
 
+    {{ if eq .Page.Section "gallery" }}
+    <script type="text/javascript" src="https://product-gallery.cloudinary.com/all.js"></script>
+    {{ end }}
+
     {{ with resources.Get "css/base.css" | minify }}
     <style>{{ .Content | safeCSS }}</style>
     {{ end }}

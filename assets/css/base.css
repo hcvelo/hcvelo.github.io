@@ -255,9 +255,8 @@ nav a {
 	font-size: 2.5rem;
 }
 
-.galleria {
+#gallery {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	background: #1d1d1b;
-	height: 600px;
 }

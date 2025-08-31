@@ -1,8 +1,17 @@
 {{ define "main" }}
-    <div class="montserrat contentPage">
-        <div class="galleria">
-            <a href="https://www.flickr.com/photos/201809229@N03/albums/72177720321989599" target="_blank">View on Flickr</a>
-        </div>
+    <div class="montserrat contentPage" id="gallery">
     </div>
+    <script>
+      cloudinary.galleryWidget({
+        container: '#gallery',
+        cloudName: 'dgtrsjv1z',
+        aspectRatio: '4:3',
+        mediaAssets: [
+          {
+              tag: "hcvelo",
+          }
+        ]
+      }).render();
+    </script>
 {{ end }}
 
