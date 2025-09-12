@@ -5,7 +5,7 @@
   font-style: normal;
 }
 
-.montserrat, .homeContainerPanel p, #ridesListContainer a {
+.montserrat, .homeContainerPanel p, #ridesListContainer a, #satSocListContainer a {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -189,7 +189,20 @@ nav a {
 	gap: 20px;
 }
 
-#ridesListContainer a {
+#satSocListContainer {
+	padding: 10px;
+	max-width: 600px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	font-size: 2.4rem;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+#ridesListContainer a, #satSocListContainer a {
 	color: white;
 }
 
@@ -199,6 +212,9 @@ nav a {
 	font-size: 2.4rem;
 }
 .sectionList h2 {
+	text-align: center;
+}
+.sectionList  {
 	text-align: center;
 }
 .sectionList ul {

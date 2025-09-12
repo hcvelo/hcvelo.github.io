@@ -1,11 +1,29 @@
 {{ define "main" }}
-<div class="montserrat">
+<div class="montserrat sectionList">
+        <h2>Upcoming Rides</h2>
 	<div id="ridesListContainer">
           {{ .Content }}
           {{ range .Pages.ByWeight }}
                 <p>{{ .Params.event_date }} {{ .Params.event_time }}</p>
 		<a href="{{ .RelPermalink }}">{{ .LinkTitle | safeHTML }}</a>
           {{ end }}
+	</div>
+</div>
+<div class="sectionList"></div>
+<div class="montserrat sectionList">
+        <h2>Saturday Social</h2>
+        <p>A selection of routes used on our regular Saturday Social rides</p>
+	<div id="satSocListContainer">
+		<a href="https://www.strava.com/routes/3400524539796963368">Gawsworth</a>
+		<a href="https://www.strava.com/routes/3400524132463090270">Beeston</a>
+                <a href="https://www.strava.com/routes/3374775734857657246">Tatton Mile &amp; Park</a>
+                <a href="https://www.strava.com/routes/3400523758371188958">Alderly Edge &amp; Mottram</a>
+                <a href="https://www.strava.com/routes/3400523832047518302">Congleton &amp; Sandbach</a>
+                <a href="https://www.strava.com/routes/3400524285927213096">Winterley &amp; Hassall</a>
+                <a href="https://www.strava.com/routes/3400524660659695838">Cholmondeston via Weaver Navigation</a>
+                <a href="https://www.strava.com/routes/3400524924012578190">Knutsford via Pickmere</a>
+                <a href="https://www.strava.com/routes/3377615481756806776">Sutton</a>  
+                <a href="https://www.strava.com/routes/3385558878784185902">Congleton &amp; Over Peover </a>
 	</div>
 </div>
 {{ end }}
