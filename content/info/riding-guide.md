@@ -29,15 +29,13 @@ There are several rides which occur on a weekly basis. The rides will be of vary
 * Rides will be categorised dependant on distance, elevation and average speed as follows:
 
 
-| Ride Category | Distance    | Elevation | Average Speed |
-|---------------|-------------|-----------|---------------|
-| A             | 100+ km     | >1200m    | 24-28 km/h    |
-| B             | 60-100 km   | 600-1200m | 22-24 km/h    |
-| C             | 40-70 km    | 200-400m  | 20-22 km/h    |
-| D             | 20-40 km    | <200m     | 18-20 km/h    |
-| CG            | Chain Gang  |           |               |
-| T             | Tempo       |           |               |
-| G             | Gravel      |           |               |
+| Ride Category | Average Speed | 
+|---------------|---------------|
+| A             | 28+ km/h      |
+| B             | 24-28 km/h    |
+| C             | 22-24 km/h    |
+| D             | 20-22 km/h    |
+| E             | 18-20km/h     |
 
 Note: Rides may be published with a combination of categories ie CAT A (speed)/B (distance) depending on the Ride Leaders view of the ride.
 
