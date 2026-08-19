@@ -4,3 +4,8 @@ title = 'My New Hugo Site'
 sectionPagesMenu = 'main'
 pluralizeListTitles = false
 enableRobotsTXT = true
+
+[[menus.main]]
+name = 'Contact'
+url = 'mailto:HCVeloCycling@gmail.com'
+weight = 100
